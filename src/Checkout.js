@@ -1,7 +1,9 @@
 export default function Checkout() {
   return (
     <section className="CheckoutForm">
-      <p>checkout</p>
+      <form>
+        <input type="text" />
+      </form>
     </section>
   );
 }

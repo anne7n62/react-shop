@@ -8,12 +8,12 @@ function App() {
     id: 1163,
     productdisplayname: "Round Neck Jersey",
     price: 895,
-    soldOut: 0,
+    soldOut: true,
   };
   return (
     <div className="App">
       <Navigation />
-      <ProductList productdisplayname={product.productdisplayname} price={product.price} />
+      <ProductList productdisplayname={product.productdisplayname} price={product.price} soldOut={product.soldOut} />
       <Basket />
     </div>
   );

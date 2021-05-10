@@ -1,10 +1,18 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  background-color: lightgrey;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 10px;
+  border: solid black 1px;
   display: grid;
   /* grid-template-columns: 25% 25% 25%; */
   grid-template-areas:
     "header header header"
+    "button button"
     "product product sidebar";
 }
 
@@ -16,16 +24,21 @@ nav {
 /*************************************/
 
 .Productlist {
-  background-color: grey;
+  border: 2px black solid;
   margin-top: 10px;
   margin-right: 10px;
 
   display: flex;
+  flex-wrap: wrap;
 }
 
 .product {
-  background-color: lightgrey;
+  background-color: rgb(238, 233, 235);
   margin: 5px;
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+  text-align: center;
 }
 
 /*************************************/
@@ -34,6 +47,12 @@ nav {
   grid-area: sidebar;
   background-color: grey;
   margin-top: 10px;
+  padding: 20px;
+  background-color: rgb(238, 233, 235);
 }
 
 /*************************************/
+
+.soldout {
+  background: lightblue;
+}

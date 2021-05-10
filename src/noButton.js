@@ -6,7 +6,9 @@ export default function Button(props) {
         backgroundColor: props.soldOut ? "green" : "red",
       }}
     >
-      <button soldOut={props.soldOut}>Click</button>
+      <button onClick={(e) => console.log("{props.id}")} soldOut={props.soldOut}>
+        Click
+      </button>
     </div>
   );
 }

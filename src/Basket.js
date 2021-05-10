@@ -1,10 +1,10 @@
 import MyBasket from "./MyBasket";
 import Checkout from "./Checkout";
 
-export default function Basket() {
+export default function Basket(props) {
   return (
     <aside className="Basket">
-      <MyBasket />
+      <MyBasket basket={props.basket} />
       <Checkout />
     </aside>
   );

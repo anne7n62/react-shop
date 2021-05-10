@@ -1,12 +1,7 @@
 import Product from "./Product";
 
 export default function ProductList(props) {
-  return (
-    <main className="Productlist">
-      <Product productdisplayname={props.productdisplayname} price={props.price} soldOut={props.soldOut} />
-      <Product productdisplayname={props.productdisplayname} price={props.price} />
-      <Product productdisplayname={props.productdisplayname} price={props.price} />
-      <Product productdisplayname={props.productdisplayname} price={props.price} />
-    </main>
-  );
+  const productComponents = props.products.map((item) => <Product addToBasket={props.addToBasket} id={item.id} name={item.productdisplayname} price={item.price} key={item.id} />);
+
+  return <main className="Productlist">{productComponents}</main>;
 }

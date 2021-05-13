@@ -4,6 +4,8 @@ import Navigation from "./navigation";
 import ProductList from "./Productlist";
 import Basket from "./Basket";
 
+// Kommentar her :-) 
+
 function App() {
   const [products, setProducts] = useState([]);
   const [basket, setBasket] = useState([]);

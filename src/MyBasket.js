@@ -20,7 +20,7 @@ export default function MyBasket(props) {
   return (
     <section className="MyBasket">
       <p>
-        You have {props.basket.length} item{props.basket.length == 1 ? "" : "s"} in your basket
+        Hello!! You have {props.basket.length} item{props.basket.length == 1 ? "" : "s"} in your basket
         {/* ternary operator */}
       </p>
       <button onClick={addToCart}>Buy More</button>

@@ -20,7 +20,7 @@ export default function MyBasket(props) {
   return (
     <section className="MyBasket">
       <p>
-        Hello you!! You have {props.basket.length} item
+        Hello you, this is your basket!! You have {props.basket.length} item
         {props.basket.length == 1 ? "" : "s"} in your basket
         {/* ternary operator */}
       </p>

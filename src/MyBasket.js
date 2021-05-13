@@ -8,7 +8,7 @@ export default function MyBasket(props) {
   ]);
 
   function addToCart() {
-    setCart((nextCart) => [
+    setCart(nextCart => [
       ...nextCart,
       {
         name: "Shoes",
@@ -20,12 +20,13 @@ export default function MyBasket(props) {
   return (
     <section className="MyBasket">
       <p>
-        Hello!! You have {props.basket.length} item{props.basket.length == 1 ? "" : "s"} in your basket
+        Hello you!! You have {props.basket.length} item
+        {props.basket.length == 1 ? "" : "s"} in your basket
         {/* ternary operator */}
       </p>
       <button onClick={addToCart}>Buy More</button>
       <ul>
-        {cart.map((item) => (
+        {cart.map(item => (
           <CartItem name={item.name} amount={item.amount} key={item.name} />
         ))}
       </ul>
